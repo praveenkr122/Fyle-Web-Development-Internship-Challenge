@@ -74,7 +74,7 @@ age<40
    ![alt text](<images/Tax Calculator - Google Chrome 15-04-2024 10_45_34.png>)
    ![alt text](<images/Tax Calculator - Google Chrome 15-04-2024 10_45_47.png>)
 
-age>60
+age>=60
    [alt text](<images/Tax Calculator - Google Chrome 15-04-2024 10_46_06.png>)
    ![alt text](<images/Tax Calculator - Google Chrome 15-04-2024 10_46_16.png>)
 
@@ -88,7 +88,7 @@ age<40
    ![alt text](<images/Tax Calculator - Google Chrome 15-04-2024 10_47_38.png>)
    ![alt text](<images/Tax Calculator - Google Chrome 15-04-2024 10_47_46.png>)
 
-age>60
+age>=60
    ![alt text](<images/Tax Calculator - Google Chrome 15-04-2024 10_48_00.png>)
    ![alt text](<images/Tax Calculator - Google Chrome 15-04-2024 10_48_01.png>)
 

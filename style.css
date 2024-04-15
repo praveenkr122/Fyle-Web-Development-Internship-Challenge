@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  position: relative; 
+}
+
+label {
+  display: block;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+input[type="number"],
+select {
+  width: calc(100% - 10px); 
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+input::placeholder {
+  color: #aaa;
+}
+
+button[type="submit"] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+#errorMessages {
+  color: #ff0000;
+  margin-bottom: 20px;
+}
+
+.question-symbol {
+  font-size: 14px;
+  color: #888;
+  cursor: help;
+  margin-left: 5px;
+}
+
+ .question-symbol::before {
+  content: '?';
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: #888;
+  color: #fff;
+  font-size: 12px;
+  margin-right: 5px;
+} 
+
+.error-icon {
+  display: none;
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  background-image: url('error-icon.png'); /* Provide the path to your error icon */
+  background-size: cover;
+  cursor: pointer;
+}
+
+.error-icon:hover::after {
+  content: attr(title);
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 5px;
+  background-color: #333;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 14px;
+  white-space: nowrap;
+  z-index: 999;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 30px; /* Increased padding */
+  border: 1px solid #888;
+  width: 80%;
+  border-radius: 5px;
+  position: relative;
+}
+.input-container {
+  position: relative;
+}
+
+.input-container input[type="number"] {
+  padding-right: 20px; 
+}
+
+.input-container .info-symbol {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  font-size: 14px;
+  color: #888;
+}
+
+.input-container .info-symbol::after {
+  content: "Enter number only";
+  position: absolute;
+  top: 50%;
+  left: calc(100% + 5px);
+  transform: translateY(-50%);
+  background-color: #333;
+  color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 14px;
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.input-container .info-symbol:hover::after {
+  opacity: 1;
+}

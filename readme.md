@@ -14,7 +14,7 @@ This web application is a part of the Fyle Web Development Internship Challenge.
 
 1. Clone the repository to your local machine:
 
-   bash git clone https://github.com/your-username/tax-calculator.git
+   bash git clone https://github.com/praveenkr122/Fyle-Web-Development-Internship-Challenge.git
 
 2. Navigate to the project directory:
 
